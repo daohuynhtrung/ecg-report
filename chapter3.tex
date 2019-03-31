@@ -1,0 +1,18 @@
+\chapter{Tìm hiểu một số nghiên cứu về phân loại điện tâm đồ bằng Deep Learning}
+
+\section{Xác định hình dạng sóng}
+-Nhiều phương pháp được sử dụng qua nhiều nghiên cứu để tìm ra các đối tượng trong ECG \cite{realtimeQRS} \cite{concho}, Một trong những phương pháp quan trọng đó là sử dụng wavelet transform.\par
+-Trong nghiên cứu \cite{4} tác giả tìm đoạn QRS và RR interval bằng cách sử dụng Slope Vector WaveForm.\par
+-Nhiều giải thuật được đề xuất trong suốt 20 năm bởi vì tầm quan trọng của xác định đoạn QRS trong phân tích ECG. Những giải thuật được dùng như: filter bank, neural network, wavelet transform và những giải thuật khác được thực hiện \cite{5}. Chủ yếu là linear và unlinear filters được dùng để xác định \cite{6}.\par
+-Trong nghiên cứu \cite{7} cubic spline wavelet được dùng để xác định QRS với độ chính xác rất cao.\par
+-Trong nghiên cứu \cite{8} 2 phương pháp được dùng là postprocessing và preprocessing để xác định QRS và loại bỏ noise trong tín hiệu ECG. Đầu tiên preprocessing được dùng để xác định nhịp QRS bằng cách sử dụng threshhold, 4 loại threshold khác nhau được sử  dụng ở phần này. Tiếp theo, postprocessing được dùng để loại bỏ nhiễu xuất hiện ở đoạn sóng R.\par
+-Trong nghiên cứu \cite{9}, sóng QRS được xác định bằng kỹ thuật dự đoán đệ quy thời gian. Được sử dụng để xác định sóng QRS ở lead 1 và lead 3.\par
+-Trong nghiên cứu \cite{10} ngôn ngữ Z80 assembly được đề xuất để xác định QRS theo thời gian thực.
+\section{Phân loại điện tim}
+-Trong nghiên cứu \cite{11}, phân loại điện tim dựa trên Neural Network và Fuzzy.par
+-Trong nghiên cứu \cite{12}, sự khác nhau giữa sóng bình thường được phân loại bằng cách sử dụng (Linear Discriminant Analysis) LDA and Artificial Neural Networks (ANN). Một số nghiên cứu cho thấy MLP (Multilayer Perception) được dùng trong ANN tốt hơn phân loại LDA. MLP trong ANN được sử dụng để tìm bình thường và bất thường ở ở nhịp tim.\par
+-Principal component analysis (PCA) và một số cấu trúc neural network được sử dụng và phân loại điện tim. Kết quả của việc này là để tìm ra mô hình neural network phù hợp nhất cho từng loại loạn nhịp khác nhau.\par
+-Trong nghiên cứu \cite{13}, để thu giảm chiều dữ liệu bằng PCA. Bài báo này đã kết hợp các giải thuật phân cụm giữa FCA và PCA neural networ, và đã chứng minh sự kết hợp này tốt hơn là sử dụng riêng lẻ. Sự so sánh giữa các giải thuật xác định loạn nhịp tim được sử dụng trong nghiên cứu \cite{14}. Trong đó KNN cũng được sử dụng để xác định QRS\par.
+-Trong nghiên cứu \cite{rnn}, Shraddha Singh và nhóm nghiên cứu đã phân loại ECG bằng mạng Neuron hồi quy và các biến thể để phân loại điện tim.\par
+-Trong nghiên cứu \cite{mohinhchinh}, Trần Thanh Duy và nhóm nghiên cứu đã dùng Vital Sign Holter để thu thập dữ liệu điện tim, sử dụng mạng Autoencoder để thu giảm chiều dữ liệu và mạng LSTM để phân lại điện tim.
+

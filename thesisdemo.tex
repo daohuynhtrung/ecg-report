@@ -1,0 +1,107 @@
+% This is a copy version from https://github.com/thanhhungqb/thesis-template
+% Please do not modified this project, when you want to start writing, make a clone of it for your own (Please read README.md)
+
+\documentclass[12pt,a4paper,oneside]{book} % twoside for draf
+
+%\usepackage{babel}
+\usepackage[utf8]{vietnam}
+\usepackage{times}
+\usepackage{graphicx}
+
+\usepackage{mathptmx}	% same Time New Roma
+%\renewcommand{\rmdefault}{phv} % Arial
+%\renewcommand{\sfdefault}{phv} % Arial
+
+\usepackage{fancyhdr}
+\usepackage{algorithm2e}
+\usepackage{commath}
+\usepackage{bkthesis}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+
+\crname{LUẬN VĂN TỐT NGHIỆP ĐẠI HỌC}
+\cstuname{SVTH: Đào Huỳnh Trung }
+\ctname{\fontsize{18}{18}\selectfont SỬ DỤNG ĐIỆN TIM TRONG XÁC ĐỊNH BẤT THƯỜNG Ở NGƯỜI SỬ DỤNG HỌC MÁY}
+
+\csCouncil{}
+\csSupervise{TS. Nguyễn Đức Dũng\\
+            TS. Huỳnh Tường Nguyên
+}
+% \csReviewer{TS. Nguyễn Đức Dũng}
+\cttime{01/04/2019}
+
+\thesislayout
+
+\begin{document}
+%-	Bìa cứng - màu xanh dương, chữ mạ vàng (xem mẫu đính kèm)
+%-	Trang tên (tờ lót): chất liệu giấy, nội dung giống như bìa LV
+%-	Ở gáy LV: in nhan đề LV (có thể in tóm tắt nếu nhan đề quá dài), size 15 – 17
+%-	Phiếu Nhiệm vụ LV, chấm điểm Hướng dẫn & Phản biện (đã ký): nhận từ GVHD & GVPB sau khi bảo vệ (theo lịch hẹn).
+%-	Lời cam đoan
+%-	Lời cảm ơn/ Lời ngỏ
+%-	Tóm tắt LV
+%-	Mục lục
+%-	Danh mục, bảng biểu, hình ảnh, ... (nếu có)
+%-	Nội dung LV
+%-	Danh mục TL tham khảo
+%-	Phụ lục (nếu có)
+
+\coverpage
+
+\frontmatter
+
+% add content here
+%-	Lời cam đoan
+% \begin{declaration}
+%  	Tôi xin cam đoan...
+%  \end{declaration}
+
+%-	Lời cảm ơn/ Lời ngỏ
+% \begin{acknowledgments}
+% 	Tôi xin chân thành cảm ơn ...
+% \end{acknowledgments}
+
+%-	Tóm tắt LV
+% \begin{abstract}
+% 	Tóm tắt luận văn ...
+% \end{abstract}	
+	
+\tableofcontents
+%\listofsymbols
+% \listoftables
+% \listoffigures
+%\listofalgorithms
+
+
+\mainmatter
+
+\fancyhead{}  % Clears all page headers and footers
+%\rhead{\thepage}  % Sets the right side header to show the page number
+%\lhead{}  % Clears the left side page header
+%\fancyfoot[positions]{footer}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\pagestyle{fancy}  % Finally, use the "fancy" page style to implement the FancyHdr headers
+
+%\input{weeklyReport.tex}
+%\input{week1.tex}
+%\input{week2.tex}
+%\input{week3.tex}
+%\input{week4.tex}
+%\input{week6.tex}
+
+\input{chapter0.tex}
+\input{chapter1.tex}
+\input{chapter2.tex}
+\input{chapter4.tex}
+\input{chapter5.tex}
+\input{chapter6.tex}
+
+%-	Danh mục TL tham khảo
+%-	Phụ lục (nếu có)
+%tham khao
+\bibliographystyle{plain}
+\bibliography{ref.bib}
+\end{document}
