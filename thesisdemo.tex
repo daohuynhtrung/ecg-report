@@ -10,7 +10,7 @@
 
 \usepackage{mathptmx}	% same Time New Roma
 %\renewcommand{\rmdefault}{phv} % Arial
-%\renewcommand{\sfdefault}{phv} % Arial
+% \renewcommand{\sfdefault}{phv} % Arial
 
 \usepackage{fancyhdr}
 \usepackage{algorithm2e}
@@ -20,13 +20,15 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{url}
+\usepackage{subfig}
 
 \crname{LUẬN VĂN TỐT NGHIỆP ĐẠI HỌC}
 \cstuname{SVTH: Đào Huỳnh Trung }
 \ctname{\fontsize{18}{18}\selectfont SỬ DỤNG ĐIỆN TIM TRONG XÁC ĐỊNH BẤT THƯỜNG Ở NGƯỜI SỬ DỤNG HỌC MÁY}
 
 \csCouncil{}
-\csSupervise{TS. Nguyễn Đức Dũng\\
+\csSupervise{ThS. Võ Thanh Hùng\\
+            TS. Nguyễn Đức Dũng\\
             TS. Huỳnh Tường Nguyên
 }
 % \csReviewer{TS. Nguyễn Đức Dũng}
@@ -53,25 +55,27 @@
 \frontmatter
 
 % add content here
-%-	Lời cam đoan
-% \begin{declaration}
-%  	Tôi xin cam đoan...
-%  \end{declaration}
+% -	Lời cam đoan
+\begin{declaration}
+    Sử dụng điện tim để phát hiện bất thường ở người không phải là một chủ đề mới nhưng vẫn luôn đem lại nhiều thách thức trong. Trong quá trình nghiên cứu đề tài có rất nhiều kiến thức không nằm trong chương trình giảng dạy ở bậc Đại học tuy vậy chúng tôi xin cam đoan đây là công trình nghiên cứu của riêng chúng tôi dưới sự hướng dẫn của thạc sĩ Võ Thanh Hùng, tiến sĩ Nguyễn Đức Dũng, phó giáo sư Huỳnh Tường Nguyên. Nội dung nghiên cứu và các kết quả đều là trung thực và chưa từng được công bố trước đây. Các số liệu được sử dụng cho quá trình phân tích, nhận xét được chính chúng tôi thu thập và sẽ được ghi rõ trong phần tài liệu tham khảo. Ngoài ra, chúng tôi cũng có sử dụng một số nhận xét, đánh giá và số liệu của các tác giả khác, cơ quan tổ chức khác. Tất cả đều có trích dẫn và chú thích nguồn gốc. Nếu phát hiện có bất kì sự gian lận nào, chúng tôi xin hoàn toàn chịu trách nhiệm về nội dung đề cương luận văn của mình. Trường đại học Bách Khoa thành phố Hồ Chí Minh không liên quan đến những vi phạm tác quyền, bản quyền do chúng tôi gây ra trong quá trình thực hiện.
+ \end{declaration}
 
 %-	Lời cảm ơn/ Lời ngỏ
-% \begin{acknowledgments}
-% 	Tôi xin chân thành cảm ơn ...
-% \end{acknowledgments}
+\begin{acknowledgments}
+	Để hoàn thành kì đề cương luận văn này, chúng tôi tỏ lòng biết ơn sâu sắc đến thạc sĩ Võ Thanh Hùng, tiến sĩ Nguyễn Đức Dũng, phó giáo sư Huỳnh Tường Nguyên đã hướng dẫn tận tình trong suốt quá trình nghiên cứu. 
+	Chúng tôi chân thành cám ơn quý thầy, cô trong khoa Khoa Học Và Kỹ Thuật Máy Tính,trường đại học Bách Khoa thành phố Hồ Chí Minh đã tận tình truyền đạt kiến thức trong những năm chúng tôi học tập ở trường. Với vốn kiến thức tích lũy được trong suốt quá trình học tập không chỉ là nền tảng cho quá trình nghiên cứu mà còn là hành trang để bước vào đời một cách tự tin. 
+	Cuối cùng, chúng tôi xin chúc quý thầy, cô dồi dào sức khỏe và thành công trong sự nghiệp cao quý.
+\end{acknowledgments}
 
 %-	Tóm tắt LV
-% \begin{abstract}
-% 	Tóm tắt luận văn ...
-% \end{abstract}	
+\begin{abstract}
+    Nội dung chính của luận văn nhằm xây dựng một mô hình giúp phát hiện những bất thường tim mạch ở người thông qua điện tâm đồ bằng những phương pháp Học sâu (Deep Learning). Trong quá trình nghiên cứu, nhóm đã đề xuất sử dụng hướng tiếp cận Mạng Bộ nhớ ngắn dài (Long-Short term memory). Sử dụng tập dữ liệu về chứng Loạn nhịp tim để phân tích, mô hình ban đầu đã cho ra những kết quả khá tích cực, có thể phát hiện được những đoạn nhịp tim bất thường trên điện tâm đồ của bệnh nhân. Bên cạnh việc hoàn thành nội dung của đề tài, nhóm chúng tôi đã nghiên cứu thêm một số phần để từ đó đặt nền móng cho các nghiên cứu sau này. Phần còn lại của luận văn tập trung vào việc đánh giá mô hình, kết quả đạt được, đồng thời phân tích ưu nhược điểm của từng mô hình và thảo luận những vấn đề mà mô hình còn gặp phải. Cuối cùng, nhóm chúng tôi đề xuất hướng phát triển tiếp theo của đề tài trong tương lai.
+\end{abstract}	
 	
 \tableofcontents
 %\listofsymbols
 % \listoftables
-% \listoffigures
+\listoffigures
 %\listofalgorithms
 
 
@@ -85,17 +89,25 @@
 
 \pagestyle{fancy}  % Finally, use the "fancy" page style to implement the FancyHdr headers
 
-\input{chapter0.tex}
-\input{chapter1.tex}
-\input{chapter2.tex}
-\input{chapter4.tex}
-\input{chapter5.tex}
-\input{chapter6.tex}
+% \input{chapter0.tex}
+% \input{chapter1.tex}
+% \input{chapter2.tex}
+% \input{chapter3.tex}
+% \input{chapter4.tex}
+% \input{chapter5.tex}
+% \input{chapter6.tex}
+% \input{chapter7.tex}
+\input{chapter1(intro).tex}
+\input{chapter2(ecg_knownledge-survey).tex}
+\input{chapter3(DL_based).tex}
+\input{chapter4(data_info-system_proposal).tex}
+\input{chapter5(experiment-evaluated).tex}
+\input{chapter6(conclusion).tex}
 
 %-	Danh mục TL tham khảo
 %-	Phụ lục (nếu có)
 %tham khao
 %nothing here
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{ref.bib}
 \end{document}
